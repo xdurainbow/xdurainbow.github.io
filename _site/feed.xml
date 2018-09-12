@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-08-09T00:23:26+08:00</updated><id>/</id><title type="html">逍遥</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">历史朝代</title><link href="/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html" rel="alternate" type="text/html" title="历史朝代" /><published>2018-08-08T00:55:09+08:00</published><updated>2018-08-08T00:55:09+08:00</updated><id>/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2</id><content type="html" xml:base="/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html">&lt;h1 id=&quot;夏&quot;&gt;&lt;strong&gt;&lt;em&gt;夏&lt;/em&gt;&lt;/strong&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-13T00:30:43+08:00</updated><id>http://localhost:4000/</id><title type="html">逍遥</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Python内置函数</title><link href="http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html" rel="alternate" type="text/html" title="Python内置函数" /><published>2018-09-13T00:28:09+08:00</published><updated>2018-09-13T00:28:09+08:00</updated><id>http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0</id><content type="html" xml:base="http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html">&lt;h1 id=&quot;python内置函数&quot;&gt;Python内置函数&lt;/h1&gt;
+&lt;h2 id=&quot;abs&quot;&gt;abs()&lt;/h2&gt;
+&lt;h3 id=&quot;描述&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;求数字的绝对值&lt;/p&gt;
+
+&lt;h3 id=&quot;使用方法&quot;&gt;使用方法&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;abs(x)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;示例&quot;&gt;示例&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print &quot;abs(-2): &quot;, abs(-2)
+&amp;gt;abs(-2):  2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;all&quot;&gt;all()&lt;/h2&gt;
+&lt;h3 id=&quot;描述-1&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;判断给定的可迭代参数iterable中的所有元素是否都为TRUE（除了0、空、FALSE），如果是返回True，否则返回False。函数等价于：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def all(iterable):
+	for element in iterable:
+		if not element:
+			return False
+	return True
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&amp;lt;font color=#f00&amp;gt;Python 2.5以上版本适用&amp;lt;/font&amp;gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用方法-1&quot;&gt;使用方法&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;all(iterable)
+:iterable——元组或列表
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;示例-1&quot;&gt;示例&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print all([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;])
+&amp;gt;True	# list元素都不为空
+print all([&quot;a&quot;, &quot;b&quot;, &quot;&quot;])
+&amp;gt;False	# list元素存在为空
+print all((&quot;a&quot;, &quot;b&quot;, &quot;c&quot;))
+&amp;gt;True	# tuple元素都不为空
+print all((&quot;a&quot;, &quot;b&quot;, &quot;&quot;))
+&amp;gt;False	# tuple元素存在为空
+print all((0, 1, 2, 3))
+&amp;gt;False	# tuple元素存在为0
+print all([1, 2, 3])
+&amp;gt;True	# list元素均不为0
+print all(())
+&amp;gt;True	# tuple本身为空
+print all([])
+&amp;gt;True	# list本身为空
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;注意最后两个，当iterable本身为空时，返回值为True&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;any&quot;&gt;any()&lt;/h2&gt;
+&lt;h3 id=&quot;描述-2&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;判断给定的可迭代参数iterable中的所有元素是否都为FALSE（0、空、FALSE），如果是返回False，否则返回True&lt;/p&gt;
+
+&lt;h3 id=&quot;提示&quot;&gt;提示&lt;/h3&gt;
+&lt;p&gt;any()和all()的含义相反，只要有一个元素为Ture，返回值即为True，而all()则需要所有的元素都为True，这里不再详细介绍，只举几个例子&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print any([&quot;a&quot;, &quot;b&quot;, &quot;&quot;])
+&amp;gt;True	# 存在不为空的元素
+print any((0, &quot;&quot;, False))
+&amp;gt;False	# 所有元素均为空、0、False
+print any(())
+&amp;gt;False	# 这里空元组或列表返回值为False
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Python内置函数 abs() 描述 求数字的绝对值</summary></entry><entry><title type="html">历史朝代</title><link href="http://localhost:4000/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html" rel="alternate" type="text/html" title="历史朝代" /><published>2018-08-08T00:55:09+08:00</published><updated>2018-08-08T00:55:09+08:00</updated><id>http://localhost:4000/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2</id><content type="html" xml:base="http://localhost:4000/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html">&lt;h1 id=&quot;夏&quot;&gt;&lt;strong&gt;&lt;em&gt;夏&lt;/em&gt;&lt;/strong&gt;&lt;/h1&gt;
 &lt;h2 id=&quot;约-2070-1600&quot;&gt;约-2070~-1600&lt;/h2&gt;
 
 &lt;h1 id=&quot;商&quot;&gt;商&lt;/h1&gt;
@@ -60,7 +126,7 @@
 &lt;h2 id=&quot;13681644&quot;&gt;1368~1644&lt;/h2&gt;
 
 &lt;h1 id=&quot;清&quot;&gt;清&lt;/h1&gt;
-&lt;h2 id=&quot;16161911&quot;&gt;1616~1911&lt;/h2&gt;</content><author><name></name></author><summary type="html">夏 约-2070~-1600</summary></entry><entry><title type="html">LeetCode</title><link href="/leetcode/2018/08/02/LeetCode_1_Two_Sum.html" rel="alternate" type="text/html" title="LeetCode" /><published>2018-08-02T00:55:09+08:00</published><updated>2018-08-02T00:55:09+08:00</updated><id>/leetcode/2018/08/02/LeetCode_1_Two_Sum</id><content type="html" xml:base="/leetcode/2018/08/02/LeetCode_1_Two_Sum.html">&lt;h1 id=&quot;题目描述&quot;&gt;题目描述&lt;/h1&gt;
+&lt;h2 id=&quot;16161911&quot;&gt;1616~1911&lt;/h2&gt;</content><author><name></name></author><summary type="html">夏 约-2070~-1600</summary></entry><entry><title type="html">LeetCode</title><link href="http://localhost:4000/leetcode/2018/08/02/LeetCode_1_Two_Sum.html" rel="alternate" type="text/html" title="LeetCode" /><published>2018-08-02T00:55:09+08:00</published><updated>2018-08-02T00:55:09+08:00</updated><id>http://localhost:4000/leetcode/2018/08/02/LeetCode_1_Two_Sum</id><content type="html" xml:base="http://localhost:4000/leetcode/2018/08/02/LeetCode_1_Two_Sum.html">&lt;h1 id=&quot;题目描述&quot;&gt;题目描述&lt;/h1&gt;
 &lt;h2 id=&quot;1two-sum&quot;&gt;1.Two Sum&lt;/h2&gt;
 &lt;p&gt;Given an array of integers, return &lt;strong&gt;indices&lt;/strong&gt; of the two numbers such that they add up to a specific target.&lt;/p&gt;
 
@@ -158,7 +224,7 @@ a[0] = 0
 a[2][0] = 0
 print a ====&amp;gt; [0, 2, [0, 2]]
 print b ====&amp;gt; [1, 2, [1, 2]]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">题目描述 1.Two Sum Given an array of integers, return indices of the two numbers such that they add up to a specific target.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2018/07/31/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-07-31T22:22:49+08:00</published><updated>2018-07-31T22:22:49+08:00</updated><id>/jekyll/update/2018/07/31/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2018/07/31/welcome-to-jekyll.html">&lt;p&gt;中文测试&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">题目描述 1.Two Sum Given an array of integers, return indices of the two numbers such that they add up to a specific target.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/07/31/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-07-31T22:22:49+08:00</published><updated>2018-07-31T22:22:49+08:00</updated><id>http://localhost:4000/jekyll/update/2018/07/31/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/07/31/welcome-to-jekyll.html">&lt;p&gt;中文测试&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 

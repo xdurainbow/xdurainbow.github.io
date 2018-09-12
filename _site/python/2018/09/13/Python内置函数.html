@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Python内置函数 | 逍遥</title>
+<meta name="generator" content="Jekyll v3.8.3" />
+<meta property="og:title" content="Python内置函数" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Python内置函数 abs() 描述 求数字的绝对值" />
+<meta property="og:description" content="Python内置函数 abs() 描述 求数字的绝对值" />
+<link rel="canonical" href="http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html" />
+<meta property="og:url" content="http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html" />
+<meta property="og:site_name" content="逍遥" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-13T00:28:09+08:00" />
+<script type="application/ld+json">
+{"headline":"Python内置函数","dateModified":"2018-09-13T00:28:09+08:00","datePublished":"2018-09-13T00:28:09+08:00","url":"http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html"},"description":"Python内置函数 abs() 描述 求数字的绝对值","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="逍遥" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">逍遥</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/tags/">标签</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Python内置函数</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-09-13T00:28:09+08:00" itemprop="datePublished">Sep 13, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="python内置函数">Python内置函数</h1>
+<h2 id="abs">abs()</h2>
+<h3 id="描述">描述</h3>
+<p>求数字的绝对值</p>
+
+<h3 id="使用方法">使用方法</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abs(x)
+</code></pre></div></div>
+
+<h3 id="示例">示例</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print "abs(-2): ", abs(-2)
+&gt;abs(-2):  2
+</code></pre></div></div>
+
+<h2 id="all">all()</h2>
+<h3 id="描述-1">描述</h3>
+<p>判断给定的可迭代参数iterable中的所有元素是否都为TRUE（除了0、空、FALSE），如果是返回True，否则返回False。函数等价于：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def all(iterable):
+	for element in iterable:
+		if not element:
+			return False
+	return True
+</code></pre></div></div>
+
+<p>&lt;font color=#f00&gt;Python 2.5以上版本适用&lt;/font&gt;</p>
+
+<h3 id="使用方法-1">使用方法</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>all(iterable)
+:iterable——元组或列表
+</code></pre></div></div>
+
+<h3 id="示例-1">示例</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print all(["a", "b", "c"])
+&gt;True	# list元素都不为空
+print all(["a", "b", ""])
+&gt;False	# list元素存在为空
+print all(("a", "b", "c"))
+&gt;True	# tuple元素都不为空
+print all(("a", "b", ""))
+&gt;False	# tuple元素存在为空
+print all((0, 1, 2, 3))
+&gt;False	# tuple元素存在为0
+print all([1, 2, 3])
+&gt;True	# list元素均不为0
+print all(())
+&gt;True	# tuple本身为空
+print all([])
+&gt;True	# list本身为空
+</code></pre></div></div>
+
+<p><strong>注意最后两个，当iterable本身为空时，返回值为True</strong></p>
+
+<h2 id="any">any()</h2>
+<h3 id="描述-2">描述</h3>
+<p>判断给定的可迭代参数iterable中的所有元素是否都为FALSE（0、空、FALSE），如果是返回False，否则返回True</p>
+
+<h3 id="提示">提示</h3>
+<p>any()和all()的含义相反，只要有一个元素为Ture，返回值即为True，而all()则需要所有的元素都为True，这里不再详细介绍，只举几个例子</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print any(["a", "b", ""])
+&gt;True	# 存在不为空的元素
+print any((0, "", False))
+&gt;False	# 所有元素均为空、0、False
+print any(())
+&gt;False	# 这里空元组或列表返回值为False
+</code></pre></div></div>
+
+
+  </div><a class="u-url" href="/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">逍遥</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">逍遥</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
