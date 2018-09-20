@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-09-14T00:06:43+08:00</updated><id>/</id><title type="html">逍遥</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Python内置函数</title><link href="/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html" rel="alternate" type="text/html" title="Python内置函数" /><published>2018-09-13T00:28:09+08:00</published><updated>2018-09-13T00:28:09+08:00</updated><id>/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0</id><content type="html" xml:base="/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html">&lt;h1 id=&quot;python内置函数&quot;&gt;Python内置函数&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-21T00:25:06+08:00</updated><id>http://localhost:4000/</id><title type="html">逍遥</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Python内置函数</title><link href="http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html" rel="alternate" type="text/html" title="Python内置函数" /><published>2018-09-13T00:28:09+08:00</published><updated>2018-09-13T00:28:09+08:00</updated><id>http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0</id><content type="html" xml:base="http://localhost:4000/python/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html">&lt;h1 id=&quot;python内置函数&quot;&gt;Python内置函数&lt;/h1&gt;
 &lt;h2 id=&quot;abs&quot;&gt;abs()&lt;/h2&gt;
 &lt;h3 id=&quot;描述&quot;&gt;描述&lt;/h3&gt;
 &lt;p&gt;求数字的绝对值&lt;/p&gt;
@@ -131,7 +131,133 @@ print issubclass(bool, int)
 &lt;h3 id=&quot;示例-5&quot;&gt;示例&lt;/h3&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print chr(060), chr(65), chr(0x61)
 &amp;gt; 0 A a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Python内置函数 abs() 描述 求数字的绝对值</summary></entry><entry><title type="html">历史朝代</title><link href="/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html" rel="alternate" type="text/html" title="历史朝代" /><published>2018-08-08T00:55:09+08:00</published><updated>2018-08-08T00:55:09+08:00</updated><id>/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2</id><content type="html" xml:base="/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html">&lt;h1 id=&quot;夏&quot;&gt;&lt;strong&gt;&lt;em&gt;夏&lt;/em&gt;&lt;/strong&gt;&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;classmethod&quot;&gt;classmethod()&lt;/h2&gt;
+
+&lt;h2 id=&quot;cmp&quot;&gt;cmp()&lt;/h2&gt;
+&lt;h3 id=&quot;描述-7&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;cmp(x, y)用于比较两个对象，如果x&amp;lt;y则返回-1，如果x==y，则返回0，如果x&amp;gt;y则返回1&lt;/p&gt;
+
+&lt;h3 id=&quot;使用方法-5&quot;&gt;使用方法&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmp(x, y)
+:x,y——数值表达式
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;示例-6&quot;&gt;示例&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print cmp(1, -1)
+&amp;gt;1
+print cmp(3, 3)
+&amp;gt;0
+print cmp(4, 7)
+&amp;gt;-1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;compile&quot;&gt;compile()&lt;/h2&gt;
+&lt;h3 id=&quot;描述-8&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;将一个字符串编译为字节代码，返回表达执行的结果&lt;/p&gt;
+
+&lt;h3 id=&quot;使用方法-6&quot;&gt;使用方法&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;compile(source, filename, mode[, flags[, dont_inherit]])
+:source——字符串或者AST(Abstract Syntax, Trees)对象
+:filename——代码文件名称，如果不是从文件读取代码则穿肚一些可辨认的值
+:mode——指定编译代码的种类，可指定为exec，eval，single
+:flags——变量作用域，局部命名空间，如果被提供，可以是任何映射对象
+:flags和dont_inherit是用来控制编译源码时的标志
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;示例-7&quot;&gt;示例&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s = &quot;for i in range(3): print i&quot;
+c = compile(s, &quot;&quot;, &quot;exec&quot;)
+print c
+&amp;gt; &amp;lt;code object &amp;lt;module&amp;gt; at 0x10c8ba0b0, file &quot;&quot;, line 1&amp;gt;
+exec(c)
+&amp;gt;0
+&amp;gt;1
+&amp;gt;2
+s = &quot;3 * 4 + 5&quot;
+c1 = compile(s, &quot;&quot;, &quot;eval&quot;)
+print eval(c1)
+&amp;gt;17
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;complex&quot;&gt;complex()&lt;/h2&gt;
+
+&lt;h2 id=&quot;delattr&quot;&gt;delattr()&lt;/h2&gt;
+&lt;h3 id=&quot;描述-9&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;删除属性&lt;/p&gt;
+
+&lt;h3 id=&quot;使用方法-7&quot;&gt;使用方法&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;delattr(object, name)
+:object——对象
+:name——该对象所拥有的属性
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;示例-8&quot;&gt;示例&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Coordinate:
+	x = 1
+	y = 2
+
+c = Coordinate()
+print &quot;x =&quot;, c.x
+&amp;gt;x = 1
+print &quot;y =&quot;, c.y
+&amp;gt;y = 2
+
+delattr(Coordinate, &quot;y&quot;)
+print &quot;x =&quot;, c.x
+&amp;gt;x = 1
+print &quot;y =&quot;, c.y
+&amp;gt;y = 
+&amp;gt;Traceback (most recent call last):
+&amp;gt;AttributeError: Coordinate instance has no attribute 'y'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;dict&quot;&gt;dict()&lt;/h2&gt;
+&lt;h3 id=&quot;描述-10&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;用于创建一个字典&lt;/p&gt;
+
+&lt;h3 id=&quot;使用方法-8&quot;&gt;使用方法&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class dict(**kwarg)
+class dict(mapping, **kwarg)
+class dict(iterable, **kwarg)
+:**kwarg——关键字
+:mapping——元素的容器
+:iterable——可迭代对象
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;示例-9&quot;&gt;示例&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print dict()  # 创建一个空的字典
+&amp;gt;{}
+print dict(x=&quot;x&quot;, y=&quot;y&quot;)  # 传入关键字
+&amp;gt;{'y': 'y', 'x': 'x'}
+print dict(zip([&quot;one&quot;, &quot;tw0&quot;, &quot;three&quot;], [1, 2, 3]))  # 映射函数方式来构造字典
+&amp;gt;{'tw0': 2, 'three': 3, 'one': 1}
+print dict([(&quot;one&quot;, 1), (&quot;two&quot;, 2), (&quot;three&quot;, 3)])  # 可迭代对象方式构造字典
+&amp;gt;{'three': 3, 'two': 2, 'one': 1}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;zip&quot;&gt;zip()&lt;/h2&gt;
+&lt;h3 id=&quot;描述-11&quot;&gt;描述&lt;/h3&gt;
+&lt;p&gt;用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。如果哥哥迭代器的元素个数不一致，则返回列表长度与&lt;strong&gt;最短&lt;/strong&gt;的对象相同，利用&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;号操作符，可以将元组解压为列表。&lt;/p&gt;
+
+&lt;h3 id=&quot;使用方法-9&quot;&gt;使用方法&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zip([iterable, ...])
+:iterable——一个或多个迭代器
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;示例-10&quot;&gt;示例&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+b = [1, 2, 3]
+c = [1, 2, 3, 4]
+zipped = zip(a, b)  # 打包为元组的列表
+print zipped
+&amp;gt;[('a', 1), ('b', 2), ('c', 3)]
+print zip(a, c)  # 元素个数与最短的列表一致
+&amp;gt;[('a', 1), ('b', 2), ('c', 3)]
+print zip(*zipped)  # zip的逆操作，即进行解压，返回二维矩阵式
+&amp;gt;[('a', 'b', 'c'), (1, 2, 3)]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Python内置函数 abs() 描述 求数字的绝对值</summary></entry><entry><title type="html">历史朝代</title><link href="http://localhost:4000/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html" rel="alternate" type="text/html" title="历史朝代" /><published>2018-08-08T00:55:09+08:00</published><updated>2018-08-08T00:55:09+08:00</updated><id>http://localhost:4000/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2</id><content type="html" xml:base="http://localhost:4000/%E5%8E%86%E5%8F%B2/2018/08/08/%E5%8E%86%E5%8F%B2.html">&lt;h1 id=&quot;夏&quot;&gt;&lt;strong&gt;&lt;em&gt;夏&lt;/em&gt;&lt;/strong&gt;&lt;/h1&gt;
 &lt;h2 id=&quot;约-2070-1600&quot;&gt;约-2070~-1600&lt;/h2&gt;
 
 &lt;h1 id=&quot;商&quot;&gt;商&lt;/h1&gt;
@@ -193,7 +319,7 @@ print issubclass(bool, int)
 &lt;h2 id=&quot;13681644&quot;&gt;1368~1644&lt;/h2&gt;
 
 &lt;h1 id=&quot;清&quot;&gt;清&lt;/h1&gt;
-&lt;h2 id=&quot;16161911&quot;&gt;1616~1911&lt;/h2&gt;</content><author><name></name></author><summary type="html">夏 约-2070~-1600</summary></entry><entry><title type="html">LeetCode</title><link href="/leetcode/2018/08/02/LeetCode_1_Two_Sum.html" rel="alternate" type="text/html" title="LeetCode" /><published>2018-08-02T00:55:09+08:00</published><updated>2018-08-02T00:55:09+08:00</updated><id>/leetcode/2018/08/02/LeetCode_1_Two_Sum</id><content type="html" xml:base="/leetcode/2018/08/02/LeetCode_1_Two_Sum.html">&lt;h1 id=&quot;题目描述&quot;&gt;题目描述&lt;/h1&gt;
+&lt;h2 id=&quot;16161911&quot;&gt;1616~1911&lt;/h2&gt;</content><author><name></name></author><summary type="html">夏 约-2070~-1600</summary></entry><entry><title type="html">LeetCode</title><link href="http://localhost:4000/leetcode/2018/08/02/LeetCode_1_Two_Sum.html" rel="alternate" type="text/html" title="LeetCode" /><published>2018-08-02T00:55:09+08:00</published><updated>2018-08-02T00:55:09+08:00</updated><id>http://localhost:4000/leetcode/2018/08/02/LeetCode_1_Two_Sum</id><content type="html" xml:base="http://localhost:4000/leetcode/2018/08/02/LeetCode_1_Two_Sum.html">&lt;h1 id=&quot;题目描述&quot;&gt;题目描述&lt;/h1&gt;
 &lt;h2 id=&quot;1two-sum&quot;&gt;1.Two Sum&lt;/h2&gt;
 &lt;p&gt;Given an array of integers, return &lt;strong&gt;indices&lt;/strong&gt; of the two numbers such that they add up to a specific target.&lt;/p&gt;
 
@@ -291,7 +417,7 @@ a[0] = 0
 a[2][0] = 0
 print a ====&amp;gt; [0, 2, [0, 2]]
 print b ====&amp;gt; [1, 2, [1, 2]]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">题目描述 1.Two Sum Given an array of integers, return indices of the two numbers such that they add up to a specific target.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2018/07/31/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-07-31T22:22:49+08:00</published><updated>2018-07-31T22:22:49+08:00</updated><id>/jekyll/update/2018/07/31/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2018/07/31/welcome-to-jekyll.html">&lt;p&gt;中文测试&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">题目描述 1.Two Sum Given an array of integers, return indices of the two numbers such that they add up to a specific target.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/07/31/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-07-31T22:22:49+08:00</published><updated>2018-07-31T22:22:49+08:00</updated><id>http://localhost:4000/jekyll/update/2018/07/31/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/07/31/welcome-to-jekyll.html">&lt;p&gt;中文测试&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
