@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>LeetCode &mdash; 逍遥</title>
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-css/css/primer.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/collection.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/repo-card.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/mini-repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/boxed-group.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/common.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/share.js/dist/css/share.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/responsive.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/posts/index.css">
+    <!-- Latest compiled and minified CSS -->
+    
+
+    
+    <link rel="canonical" href="http://localhost:4000/2018/08/02/LeetCode_1_Two_Sum/">
+    <link rel="alternate" type="application/atom+xml" title="逍遥" href="http://localhost:4000/feed.xml">
+    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+    
+    <meta property="og:title" content="LeetCode">
+      
+    <meta name="keywords" content="逍遥, xdurainbow">
+    <meta name="og:keywords" content="逍遥, xdurainbow">
+      
+    <meta name="description" content="题目描述1.Two SumGiven an array of integers, return indices of the two numbers such that they add up to a specific target.">
+    <meta name="og:description" content="题目描述1.Two SumGiven an array of integers, return indices of the two numbers such that they add up to a specific target.">
+      
+    
+    
+        
+    
+    <meta property="og:url" content="http://localhost:4000/2018/08/02/LeetCode_1_Two_Sum/">
+    <meta property="og:site_name" content="逍遥">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2018-08-02">
+    
+    <script src="http://localhost:4000/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/js/jquery-ui.js"></script>
+    <script src="http://localhost:4000/assets/js/main.js"></script>
+</head>
+<body class="" data-mz="">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="http://localhost:4000/" title="逍遥"><span class="octicon octicon-mark-github"></span> 逍遥</a></h1>
+            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav class="site-header-nav" role="navigation">
+                
+                <a href="http://localhost:4000/" class=" site-header-nav-item" target="" title="首页">首页</a>
+                
+                <a href="http://localhost:4000/categories/" class=" site-header-nav-item" target="" title="分类">分类</a>
+                
+                <a href="http://localhost:4000/wiki/" class=" site-header-nav-item" target="" title="维基">维基</a>
+                
+                <a href="http://localhost:4000/links/" class=" site-header-nav-item" target="" title="链接">链接</a>
+                
+                <a href="http://localhost:4000/about/" class=" site-header-nav-item" target="" title="关于">关于</a>
+                
+            </nav>
+        </div>
+    </header>
+    <!-- / header -->
+
+    <section class="collection-head small geopattern" data-pattern-id="LeetCode">
+<div class="container">
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="collection-title">
+        <h1 class="collection-header">LeetCode</h1>
+        <div class="collection-info">
+          
+          <span class="meta-info">
+            <span class="octicon octicon-calendar"></span> 2018/08/02
+          </span>
+          
+          
+          <span class="meta-info">
+            <span class="octicon octicon-file-directory"></span>
+            <a href="http://localhost:4000/categories/#leetcode" title="leetcode">leetcode</a>
+          </span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- / .banner -->
+<section class="container content">
+<div class="columns">
+  <div class="column three-fourths" >
+    <article class="article-content markdown-body">
+    <h1 id="题目描述">题目描述</h1>
+<h2 id="1two-sum">1.Two Sum</h2>
+<p>Given an array of integers, return <strong>indices</strong> of the two numbers such that they add up to a specific target.</p>
+
+<p>You may assume that each input would have <strong>exactly</strong> one solution, and you may not use the same element twice.</p>
+
+<p>Example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+</code></pre>
+</div>
+
+<h1 id="题目解析">题目解析</h1>
+<p>给定一个整数数组和一个目标值，求解数组中的和为目标值的两个数的索引值。</p>
+
+<h2 id="实现1">实现1</h2>
+<p>首先想到最简单的办法就是遍历这个数组，去判断当前遍历到的两个数的和是否为目标值：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def twoSum(nums, target):
+	"""
+	:type nums: List[int]
+	:type target: int
+	:rtype: List[int]
+	"""
+	for i in range(len(nums)):
+		for j in range(i+1, len(nums)):
+			if nums[i] + nums[j] == target:
+				return [i, j]
+</code></pre>
+</div>
+<p>一遍直接AC。LeetCode上面有个功能，可以查看时间复杂度和空间复杂度以及这道题你击败了多少人。看了下结果：Runtime：<code class="highlighter-rouge">3152ms</code>，击败了<code class="highlighter-rouge">16.06%</code>的人。</p>
+
+<h2 id="改进思考">改进思考</h2>
+<p>由于是最容易想到的最简单的也是最暴力的方法，效率显然是很low的，两个for循环，复杂度直接到了O(n<sup>2</sup>)。再分析下题目，我们有<strong>exactly</strong>一个解，那么如果这个数组是有序的，我们分别从数组的开始（i）和结尾（j）向中间遍历，如果两个数的和大于目标值，则i++，否则j–，直至找到那个唯一的解，这样只遍历了一遍数组，复杂度为O(n)，排序的算法复杂度为O(nlogn)，因此最终复杂度为O(nlogn)，远小于O(n<sup>2</sup>)。</p>
+
+<h2 id="实现2">实现2</h2>
+<p>首先将nums<strong><em>拷贝</em></strong>一份，然后对nums进行排序，按上述方法找到哪两个数的和为目标值，然后在之前备份的数组中查看这两个数值的索引。这里需要注意的是，由于数组中可能有重复值，例如给定数组为[3,3]，目标值为6，按上述方法返回的是[0,0]，而不是[0,1]。因此在找到第一个索引值后，把第一个数改变下，只要不和第二个数相等即可，<code class="highlighter-rouge">这里采取的方法是设置为第二个值+1，见倒数第三行</code>，这样就不会在求第二个索引值时受影响。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import copy
+
+def twoSum(nums, target):
+    """
+    :type nums: List[int]
+    :type target: int
+    :rtype: List[int]
+    """
+    num = copy.deepcopy(nums)
+    nums.sort()
+    i = 0
+    j = len(nums) - 1
+    while(nums[i] + nums[j] != target):
+        if nums[i] + nums[j] &gt; target:
+            j -= 1
+        else:
+            i += 1
+    a = num.index(nums[i])
+    num[a] = nums[j] + 1
+    b = num.index(nums[j])
+    return [a, b]
+</code></pre>
+</div>
+
+<h2 id="python中的拷贝">Python中的拷贝</h2>
+<p>Python中创建一个对象，把他赋值给另一个对象时，并没有拷贝这个对象，而是拷贝对象的引用。</p>
+
+<p>在下面的例子中以此为基础（结果是在2.7.10版本上得出的）</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import copy
+a = [1, 2, [1, 2]]
+</code></pre>
+</div>
+<h3 id="1直接赋值">1、直接赋值</h3>
+<p>只是传递对象的引用，原list改变之后，拷贝的list也会跟着变</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>b = a
+a[0] = 0
+print a ====&gt; [0, 2, [1, 2]]
+print b ====&gt; [0, 2, [1, 2]]
+</code></pre>
+</div>
+
+<h3 id="2浅拷贝">2、浅拷贝</h3>
+<p>没有拷贝子对象，原list改变之后，其中的子对象会改变。</p>
+
+<p>这里对a[0]进行改变的时候，b[0]不会跟着变，但是改变a的子对象a[2]的内容时，b是会跟着变的。<strong>注意：如果直接设置a[2] = 0时，b是不会变的，因为这里并不是在处理他的子对象</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>b = copy.copy(a)
+a[0] = 0
+a[2][0] = 0
+print a ====&gt; [0, 2, [0, 2]]
+print b ====&gt; [1, 2, [0, 2]]
+</code></pre>
+</div>
+
+<h3 id="3深拷贝">3、深拷贝</h3>
+<p>包含对象里面的子对象的拷贝，所以原list的任何改变不会影响到拷贝的list</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>b = copy.deepcopy(a)
+a[0] = 0
+a[2][0] = 0
+print a ====&gt; [0, 2, [0, 2]]
+print b ====&gt; [1, 2, [1, 2]]
+</code></pre>
+</div>
+
+
+    </article>
+    <div class="share">
+      <div class="share-component"></div>
+    </div>
+    <div class="comment">
+      
+
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/2018/08/02/LeetCode_1_Two_Sum/',
+            clientID: 'd2e1cbbd298958076462',
+            clientSecret: 'b42a4178e5fd4a7cf63189ef4b1453b05c375709',
+            repo: 'blog-comments',
+            owner: 'mzlogin',
+            admin: ['mzlogin'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+    </div>
+  </div>
+  <div class="column one-fourth">
+    
+<h3>Search</h3>
+<div id="site_search">
+    <input type="text" id="search_box" placeholder="Search">
+</div>
+
+<ul id="search_results"></ul>
+
+<link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/modules/sidebar-search.css">
+<script src="http://localhost:4000/assets/js/simple-jekyll-search.min.js"></script>
+<script src="http://localhost:4000/assets/js/search.js"></script>
+
+<script type="text/javascript">
+SimpleJekyllSearch({
+    searchInput: document.getElementById('search_box'),
+    resultsContainer: document.getElementById('search_results'),
+    json: 'http://localhost:4000/assets/search_data.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+})
+</script>
+
+    
+
+    
+<h3 class="post-directory-title mobile-hidden">Table of Contents</h3>
+<div id="post-directory-module" class="mobile-hidden">
+  <section class="post-directory">
+  <!-- Links that trigger the jumping -->
+  <!-- Added by javascript below -->
+  <dl></dl>
+  </section>
+</div>
+
+<script src="http://localhost:4000/assets/js/jquery.toc.js"></script>
+
+  </div>
+</div>
+</section>
+<!-- /section.content -->
+
+    <footer class="container">
+        <div class="site-footer" role="contentinfo">
+            <div class="copyright left mobile-block">
+                    © 2015
+                    <span title="逍遥">逍遥</span>
+                    <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+            </div>
+
+            <ul class="site-footer-links right mobile-hidden">
+                <li>
+                    <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+                </li>
+            </ul>
+            <a href="http://github.com/xdurainbow/xdurainbow.github.io" target="_blank" aria-label="view source code">
+                <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+            </a>
+            <ul class="site-footer-links mobile-hidden">
+                
+                <li>
+                    <a href="http://localhost:4000/" title="首页" target="">首页</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/categories/" title="分类" target="">分类</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/wiki/" title="维基" target="">维基</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/links/" title="链接" target="">链接</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/about/" title="关于" target="">关于</a>
+                </li>
+                
+                <li><a href="http://localhost:4000/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <div class="tools-wrapper">
+      <a class="gotop" href="#" title="回到顶部"><span class="octicon octicon-arrow-up"></span></a>
+    </div>
+    <!-- / footer -->
+    <script src="http://localhost:4000/assets/vendor/share.js/dist/js/share.min.js"></script>
+    <script src="http://localhost:4000/assets/js/geopattern.js"></script>
+    <script src="http://localhost:4000/assets/js/prism.js"></script>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/prism.css">
+    <script>
+      jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+       // hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div style="display:none">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80669434-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </div>
+    
+</body>
+</html>

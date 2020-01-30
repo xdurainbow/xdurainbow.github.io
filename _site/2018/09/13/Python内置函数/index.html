@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Python内置函数 &mdash; 逍遥</title>
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-css/css/primer.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/collection.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/repo-card.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/sections/mini-repo-list.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/components/boxed-group.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/common.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vendor/share.js/dist/css/share.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/responsive.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/posts/index.css">
+    <!-- Latest compiled and minified CSS -->
+    
+
+    
+    <link rel="canonical" href="http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">
+    <link rel="alternate" type="application/atom+xml" title="逍遥" href="http://localhost:4000/feed.xml">
+    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+    
+    <meta property="og:title" content="Python内置函数">
+      
+    <meta name="keywords" content="逍遥, xdurainbow">
+    <meta name="og:keywords" content="逍遥, xdurainbow">
+      
+    <meta name="description" content="Python内置函数abs()描述求数字的绝对值">
+    <meta name="og:description" content="Python内置函数abs()描述求数字的绝对值">
+      
+    
+    
+        
+    
+    <meta property="og:url" content="http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">
+    <meta property="og:site_name" content="逍遥">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2018-09-13">
+    
+    <script src="http://localhost:4000/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/js/jquery-ui.js"></script>
+    <script src="http://localhost:4000/assets/js/main.js"></script>
+</head>
+<body class="" data-mz="">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="http://localhost:4000/" title="逍遥"><span class="octicon octicon-mark-github"></span> 逍遥</a></h1>
+            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav class="site-header-nav" role="navigation">
+                
+                <a href="http://localhost:4000/" class=" site-header-nav-item" target="" title="首页">首页</a>
+                
+                <a href="http://localhost:4000/categories/" class=" site-header-nav-item" target="" title="分类">分类</a>
+                
+                <a href="http://localhost:4000/wiki/" class=" site-header-nav-item" target="" title="维基">维基</a>
+                
+                <a href="http://localhost:4000/links/" class=" site-header-nav-item" target="" title="链接">链接</a>
+                
+                <a href="http://localhost:4000/about/" class=" site-header-nav-item" target="" title="关于">关于</a>
+                
+            </nav>
+        </div>
+    </header>
+    <!-- / header -->
+
+    <section class="collection-head small geopattern" data-pattern-id="Python内置函数">
+<div class="container">
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="collection-title">
+        <h1 class="collection-header">Python内置函数</h1>
+        <div class="collection-info">
+          
+          <span class="meta-info">
+            <span class="octicon octicon-calendar"></span> 2018/09/13
+          </span>
+          
+          
+          <span class="meta-info">
+            <span class="octicon octicon-file-directory"></span>
+            <a href="http://localhost:4000/categories/#Python" title="Python">Python</a>
+          </span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- / .banner -->
+<section class="container content">
+<div class="columns">
+  <div class="column three-fourths" >
+    <article class="article-content markdown-body">
+    <h1 id="python内置函数">Python内置函数</h1>
+<h2 id="abs">abs()</h2>
+<h3 id="描述">描述</h3>
+<p>求数字的绝对值</p>
+
+<h3 id="使用方法">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>abs(x)
+</code></pre>
+</div>
+
+<h3 id="示例">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print "abs(-2): ", abs(-2)
+&gt;abs(-2):  2
+</code></pre>
+</div>
+
+<h2 id="all">all()</h2>
+<h3 id="描述-1">描述</h3>
+<p>判断给定的可迭代参数iterable中的所有元素是否都为TRUE（除了0、空、FALSE），如果是返回True，否则返回False。函数等价于：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def all(iterable):
+	for element in iterable:
+		if not element:
+			return False
+	return True
+</code></pre>
+</div>
+
+<p>&lt;font color=#f00&gt;Python 2.5以上版本适用&lt;/font&gt;</p>
+
+<h3 id="使用方法-1">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>all(iterable)
+:iterable——元组或列表
+</code></pre>
+</div>
+
+<h3 id="示例-1">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print all(["a", "b", "c"])
+&gt;True	# list元素都不为空
+print all(["a", "b", ""])
+&gt;False	# list元素存在为空
+print all(("a", "b", "c"))
+&gt;True	# tuple元素都不为空
+print all(("a", "b", ""))
+&gt;False	# tuple元素存在为空
+print all((0, 1, 2, 3))
+&gt;False	# tuple元素存在为0
+print all([1, 2, 3])
+&gt;True	# list元素均不为0
+print all(())
+&gt;True	# tuple本身为空
+print all([])
+&gt;True	# list本身为空
+</code></pre>
+</div>
+
+<p><strong>注意最后两个，当iterable本身为空时，返回值为True</strong></p>
+
+<h2 id="any">any()</h2>
+<h3 id="描述-2">描述</h3>
+<p>判断给定的可迭代参数iterable中的所有元素是否都为FALSE（0、空、FALSE），如果是返回False，否则返回True</p>
+
+<h3 id="提示">提示</h3>
+<p>any()和all()的含义相反，只要有一个元素为Ture，返回值即为True，而all()则需要所有的元素都为True，这里不再详细介绍，只举几个例子</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>print any(["a", "b", ""])
+&gt;True	# 存在不为空的元素
+print any((0, "", False))
+&gt;False	# 所有元素均为空、0、False
+print any(())
+&gt;False	# 这里空元组或列表返回值为False
+</code></pre>
+</div>
+
+<h2 id="basestring">basestring()</h2>
+<h3 id="描述-3">描述</h3>
+<p>它是str和unicode的超类，也是抽象类，因此不能被调用和实例化，但可以被用来判断一个对象是否为str或者Unicode的实例。<code class="highlighter-rouge">isinstance(obj, basestring)</code>等价于<code class="highlighter-rouge">isinstance(obj, (str, unicode))</code></p>
+
+<h3 id="示例-2">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print isinstance("hello", str)
+&gt;True
+print isinstance("hello", basestring)
+&gt;True
+</code></pre>
+</div>
+
+<h2 id="bin">bin()</h2>
+<h3 id="描述-4">描述</h3>
+<p>返回一个整数int或者长整数long int的二进制表示</p>
+
+<h3 id="使用方法-2">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>bin(x)
+</code></pre>
+</div>
+
+<h3 id="示例-3">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print bin(-1)
+&gt;-0b1
+print bin(8)
+&gt;0b1000
+print bin(1000)
+&gt;0b1111101000
+</code></pre>
+</div>
+
+<h2 id="bool">bool()</h2>
+<h3 id="描述-5">描述</h3>
+<p>将给定的参数转换为布尔类型，如果没有参数，返回False。<strong>bool是int的子类。</strong></p>
+
+<h3 id="使用方法-3">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>bool(x)
+</code></pre>
+</div>
+
+<h3 id="示例-4">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print bool()
+&gt;False
+print bool(0)
+&gt;False
+print bool(1)
+&gt;True
+print bool(5)
+&gt;True	# 任何非零值，转换为布尔类型均为True
+print issubclass(bool, int)
+&gt;True
+</code></pre>
+</div>
+
+<h2 id="bytearray">bytearray()</h2>
+
+<h2 id="callable">callable()</h2>
+
+<h2 id="chr">chr()</h2>
+<h3 id="描述-6">描述</h3>
+<p>对于（0，255）之间的整数，返回其对应的字符</p>
+
+<h3 id="使用方法-4">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>chr(i)
+:i——八进制、十进制或十六进制的整数
+</code></pre>
+</div>
+
+<h3 id="示例-5">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print chr(060), chr(65), chr(0x61)
+&gt; 0 A a
+</code></pre>
+</div>
+
+<h2 id="classmethod">classmethod()</h2>
+
+<h2 id="cmp">cmp()</h2>
+<h3 id="描述-7">描述</h3>
+<p>cmp(x, y)用于比较两个对象，如果x&lt;y则返回-1，如果x==y，则返回0，如果x&gt;y则返回1</p>
+
+<h3 id="使用方法-5">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>cmp(x, y)
+:x,y——数值表达式
+</code></pre>
+</div>
+
+<h3 id="示例-6">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print cmp(1, -1)
+&gt;1
+print cmp(3, 3)
+&gt;0
+print cmp(4, 7)
+&gt;-1
+</code></pre>
+</div>
+
+<h2 id="compile">compile()</h2>
+<h3 id="描述-8">描述</h3>
+<p>将一个字符串编译为字节代码，返回表达执行的结果</p>
+
+<h3 id="使用方法-6">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>compile(source, filename, mode[, flags[, dont_inherit]])
+:source——字符串或者AST(Abstract Syntax, Trees)对象
+:filename——代码文件名称，如果不是从文件读取代码则穿肚一些可辨认的值
+:mode——指定编译代码的种类，可指定为exec，eval，single
+:flags——变量作用域，局部命名空间，如果被提供，可以是任何映射对象
+:flags和dont_inherit是用来控制编译源码时的标志
+</code></pre>
+</div>
+
+<h3 id="示例-7">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>s = "for i in range(3): print i"
+c = compile(s, "", "exec")
+print c
+&gt; &lt;code object &lt;module&gt; at 0x10c8ba0b0, file "", line 1&gt;
+exec(c)
+&gt;0
+&gt;1
+&gt;2
+s = "3 * 4 + 5"
+c1 = compile(s, "", "eval")
+print eval(c1)
+&gt;17
+</code></pre>
+</div>
+
+<h2 id="complex">complex()</h2>
+
+<h2 id="delattr">delattr()</h2>
+<h3 id="描述-9">描述</h3>
+<p>删除属性</p>
+
+<h3 id="使用方法-7">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>delattr(object, name)
+:object——对象
+:name——该对象所拥有的属性
+</code></pre>
+</div>
+
+<h3 id="示例-8">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>class Coordinate:
+	x = 1
+	y = 2
+
+c = Coordinate()
+print "x =", c.x
+&gt;x = 1
+print "y =", c.y
+&gt;y = 2
+
+delattr(Coordinate, "y")
+print "x =", c.x
+&gt;x = 1
+print "y =", c.y
+&gt;y = 
+&gt;Traceback (most recent call last):
+&gt;AttributeError: Coordinate instance has no attribute 'y'
+</code></pre>
+</div>
+
+<h2 id="dict">dict()</h2>
+<h3 id="描述-10">描述</h3>
+<p>用于创建一个字典</p>
+
+<h3 id="使用方法-8">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>class dict(**kwarg)
+class dict(mapping, **kwarg)
+class dict(iterable, **kwarg)
+:**kwarg——关键字
+:mapping——元素的容器
+:iterable——可迭代对象
+</code></pre>
+</div>
+
+<h3 id="示例-9">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>print dict()  # 创建一个空的字典
+&gt;{}
+print dict(x="x", y="y")  # 传入关键字
+&gt;{'y': 'y', 'x': 'x'}
+print dict(zip(["one", "tw0", "three"], [1, 2, 3]))  # 映射函数方式来构造字典
+&gt;{'tw0': 2, 'three': 3, 'one': 1}
+print dict([("one", 1), ("two", 2), ("three", 3)])  # 可迭代对象方式构造字典
+&gt;{'three': 3, 'two': 2, 'one': 1}
+</code></pre>
+</div>
+
+<h2 id="zip">zip()</h2>
+<h3 id="描述-11">描述</h3>
+<p>用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。如果哥哥迭代器的元素个数不一致，则返回列表长度与<strong>最短</strong>的对象相同，利用<code class="highlighter-rouge">*</code>号操作符，可以将元组解压为列表。</p>
+
+<h3 id="使用方法-9">使用方法</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>zip([iterable, ...])
+:iterable——一个或多个迭代器
+</code></pre>
+</div>
+
+<h3 id="示例-10">示例</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>a = ["a", "b", "c"]
+b = [1, 2, 3]
+c = [1, 2, 3, 4]
+zipped = zip(a, b)  # 打包为元组的列表
+print zipped
+&gt;[('a', 1), ('b', 2), ('c', 3)]
+print zip(a, c)  # 元素个数与最短的列表一致
+&gt;[('a', 1), ('b', 2), ('c', 3)]
+print zip(*zipped)  # zip的逆操作，即进行解压，返回二维矩阵式
+&gt;[('a', 'b', 'c'), (1, 2, 3)]
+</code></pre>
+</div>
+
+    </article>
+    <div class="share">
+      <div class="share-component"></div>
+    </div>
+    <div class="comment">
+      
+
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%9',
+            clientID: 'd2e1cbbd298958076462',
+            clientSecret: 'b42a4178e5fd4a7cf63189ef4b1453b05c375709',
+            repo: 'blog-comments',
+            owner: 'mzlogin',
+            admin: ['mzlogin'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+    </div>
+  </div>
+  <div class="column one-fourth">
+    
+<h3>Search</h3>
+<div id="site_search">
+    <input type="text" id="search_box" placeholder="Search">
+</div>
+
+<ul id="search_results"></ul>
+
+<link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/modules/sidebar-search.css">
+<script src="http://localhost:4000/assets/js/simple-jekyll-search.min.js"></script>
+<script src="http://localhost:4000/assets/js/search.js"></script>
+
+<script type="text/javascript">
+SimpleJekyllSearch({
+    searchInput: document.getElementById('search_box'),
+    resultsContainer: document.getElementById('search_results'),
+    json: 'http://localhost:4000/assets/search_data.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+})
+</script>
+
+    
+
+    
+<h3 class="post-directory-title mobile-hidden">Table of Contents</h3>
+<div id="post-directory-module" class="mobile-hidden">
+  <section class="post-directory">
+  <!-- Links that trigger the jumping -->
+  <!-- Added by javascript below -->
+  <dl></dl>
+  </section>
+</div>
+
+<script src="http://localhost:4000/assets/js/jquery.toc.js"></script>
+
+  </div>
+</div>
+</section>
+<!-- /section.content -->
+
+    <footer class="container">
+        <div class="site-footer" role="contentinfo">
+            <div class="copyright left mobile-block">
+                    © 2015
+                    <span title="逍遥">逍遥</span>
+                    <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+            </div>
+
+            <ul class="site-footer-links right mobile-hidden">
+                <li>
+                    <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+                </li>
+            </ul>
+            <a href="http://github.com/xdurainbow/xdurainbow.github.io" target="_blank" aria-label="view source code">
+                <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+            </a>
+            <ul class="site-footer-links mobile-hidden">
+                
+                <li>
+                    <a href="http://localhost:4000/" title="首页" target="">首页</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/categories/" title="分类" target="">分类</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/wiki/" title="维基" target="">维基</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/links/" title="链接" target="">链接</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:4000/about/" title="关于" target="">关于</a>
+                </li>
+                
+                <li><a href="http://localhost:4000/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <div class="tools-wrapper">
+      <a class="gotop" href="#" title="回到顶部"><span class="octicon octicon-arrow-up"></span></a>
+    </div>
+    <!-- / footer -->
+    <script src="http://localhost:4000/assets/vendor/share.js/dist/js/share.min.js"></script>
+    <script src="http://localhost:4000/assets/js/geopattern.js"></script>
+    <script src="http://localhost:4000/assets/js/prism.js"></script>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/globals/prism.css">
+    <script>
+      jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+       // hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div style="display:none">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80669434-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </div>
+    
+</body>
+</html>
