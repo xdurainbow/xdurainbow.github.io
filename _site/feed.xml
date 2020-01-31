@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T16:01:48+08:00</updated><id>http://localhost:4000/</id><title type="html">逍遥</title><subtitle>逍遥的个人博客</subtitle><author><name>逍遥</name></author><entry><title type="html">Python内置函数</title><link href="http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" rel="alternate" type="text/html" title="Python内置函数" /><published>2018-09-13T00:28:09+08:00</published><updated>2018-09-13T00:28:09+08:00</updated><id>http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0</id><content type="html" xml:base="http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">&lt;h1 id=&quot;python内置函数&quot;&gt;Python内置函数&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T22:23:19+08:00</updated><id>http://localhost:4000/</id><title type="html">逍遥</title><subtitle>逍遥的个人博客</subtitle><author><name>逍遥</name></author><entry><title type="html">常见口罩相关知识</title><link href="http://localhost:4000/2018/09/13/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%8F%A3%E7%BD%A9/" rel="alternate" type="text/html" title="常见口罩相关知识" /><published>2018-09-13T00:28:09+08:00</published><updated>2018-09-13T00:28:09+08:00</updated><id>http://localhost:4000/2018/09/13/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%8F%A3%E7%BD%A9</id><content type="html" xml:base="http://localhost:4000/2018/09/13/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%8F%A3%E7%BD%A9/">&lt;h1 id=&quot;常见口罩相关知识&quot;&gt;常见口罩相关知识&lt;/h1&gt;
+&lt;h2 id=&quot;基本分类&quot;&gt;基本分类&lt;/h2&gt;
+&lt;h3 id=&quot;1-棉布口罩&quot;&gt;1 棉布口罩&lt;/h3&gt;
+&lt;p&gt;主要用于防寒，避免直接呼入冷空气刺激呼吸道，对于雾霾及病毒基本无防护作用&lt;/p&gt;
+
+&lt;h3 id=&quot;2-医用无纺布口罩&quot;&gt;2 医用无纺布口罩&lt;/h3&gt;
+&lt;p&gt;主要用于防菌，仅限房、防止喷射造成的病菌感染，例如打喷嚏造成的病菌传播，但是其贴合性差，不能防尘，对于雾霾作用有限。&lt;/p&gt;
+
+&lt;h3 id=&quot;3-活性炭口罩&quot;&gt;3 活性炭口罩&lt;/h3&gt;
+&lt;p&gt;在口罩的夹层内加入活性炭，由于活性炭的吸附能力很强，能有效的防菌防尘，但是带着呼吸不顺畅。&lt;/p&gt;
+
+&lt;h3 id=&quot;4-防尘口罩&quot;&gt;4 防尘口罩&lt;/h3&gt;
+&lt;p&gt;这类口罩一般是杯型，能够有效贴合口鼻，从而进行防尘。&lt;/p&gt;
+
+&lt;h2 id=&quot;关于n95&quot;&gt;关于N95&lt;/h2&gt;
+&lt;h3 id=&quot;1-nrp&quot;&gt;1 N/R/P&lt;/h3&gt;
+&lt;p&gt;这三个都是美国的NIOSH标准，中国有国标GB2626-2006的KN和KP&lt;/p&gt;
+
+&lt;p&gt;N（Not resistant to oil）不耐油，不防油性颗粒物，通常非油性颗粒物指的的是煤尘，酸雾，微生物等，在雾霾中的悬浮颗粒也多是非油性的；油性颗粒物指油烟，油雾，沥青烟等。&lt;/p&gt;
+
+&lt;p&gt;R（Resistant to oil）耐油，有限制性的耐油性颗粒物，若用于油性颗粒物，使用时间不超过8小时&lt;/p&gt;
+
+&lt;p&gt;P（Oil proof）防油性颗粒物&lt;/p&gt;
+
+&lt;h3 id=&quot;2-9599100&quot;&gt;2 95/99/100&lt;/h3&gt;
+&lt;p&gt;该数值是指用0.3微米颗粒进行测试时的过滤效率水平&lt;/p&gt;
+
+&lt;p&gt;95:过滤效率在95%以上&lt;/p&gt;
+
+&lt;p&gt;99:过滤效率在99%以上&lt;/p&gt;
+
+&lt;p&gt;100:过滤效率在99.7%以上&lt;/p&gt;</content><author><name>逍遥</name></author><summary type="html">常见口罩相关知识 基本分类 1 棉布口罩 主要用于防寒，避免直接呼入冷空气刺激呼吸道，对于雾霾及病毒基本无防护作用</summary></entry><entry><title type="html">Python内置函数</title><link href="http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" rel="alternate" type="text/html" title="Python内置函数" /><published>2018-09-13T00:28:09+08:00</published><updated>2018-09-13T00:28:09+08:00</updated><id>http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0</id><content type="html" xml:base="http://localhost:4000/2018/09/13/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">&lt;h1 id=&quot;python内置函数&quot;&gt;Python内置函数&lt;/h1&gt;
 &lt;h2 id=&quot;abs&quot;&gt;abs()&lt;/h2&gt;
 &lt;h3 id=&quot;描述&quot;&gt;描述&lt;/h3&gt;
 &lt;p&gt;求数字的绝对值&lt;/p&gt;
